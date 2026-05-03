@@ -1,11 +1,17 @@
 import argparse
 import api
+import storage
 
 def mock_save():
     print('saving...')
 
 def mock_favourites():
     print('favourites...')
+
+def handle_search(args):
+    results = api.get_concert(args)
+    storage.clear_last_search()
+    storage.save_last_search(results)
 
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers()
@@ -14,7 +20,7 @@ subparsers = parser.add_subparsers()
 search = subparsers.add_parser('search')
 search.add_argument('--artist', type=str, required=True)
 search.add_argument('--city', type=str, required=True)
-search.set_defaults(func=api.get_concert)
+search.set_defaults(func=handle_search)
 
 # Creates subparsers for saving to favourites and printing favourites
 save = subparsers.add_parser('save')
