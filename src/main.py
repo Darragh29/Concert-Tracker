@@ -2,10 +2,10 @@ import argparse
 import api
 import storage
 
-def mock_save():
-    print('saving...')
+def save_favourites(args):
+    storage.save_favourites()
 
-def mock_favourites():
+def mock_favourites(args):
     print('favourites...')
 
 def handle_search(args):
@@ -24,7 +24,7 @@ search.set_defaults(func=handle_search)
 
 # Creates subparsers for saving to favourites and printing favourites
 save = subparsers.add_parser('save')
-save.set_defaults(func=mock_save)
+save.set_defaults(func=save_favourites)
 favourites = subparsers.add_parser('favourites')
 favourites.set_defaults(func=mock_favourites)
 

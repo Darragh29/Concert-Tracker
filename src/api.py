@@ -11,7 +11,7 @@ def get_concert(args):
     formatted_data = data['_embedded']['events']
     final_data = []
 
-    for i,event in enumerate(formatted_data):
+    for event in formatted_data:
         data_json = {'name':event['name'],
                      'venue':event['_embedded']['venues'][0]['name'],
                      'city':event['_embedded']['venues'][0]['city']['name'],
