@@ -2,11 +2,11 @@ import json
 
 def save_last_search(data):
     with open('data/last_search.json', 'w') as f:
-        json.dump(data,f)
+        json.dump(data,f, indent=2)
 
 def clear_last_search():
     with open('data/last_search.json', 'w') as f:
-        json.dump([],f)
+        json.dump([],f, indent=2)
 
 def get_last_search():
     with open('data/last_search.json', 'r') as f:
@@ -20,7 +20,8 @@ def save_favourites():
 
     with open('data/favourites.json', 'r') as favourites:
         existing_favourites = json.load(favourites)
-        existing_favourites.append(last_search)
+        existing_favourites.extend(last_search)
+        print(existing_favourites)
 
     with open('data/favourites.json', 'w') as new_favourites:
-        json.dump(existing_favourites, new_favourites)
+        json.dump(existing_favourites, new_favourites, indent=2)
