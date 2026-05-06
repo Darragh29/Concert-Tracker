@@ -33,5 +33,40 @@
     "city": "Dublin",
     "date": "2026-05-07",
     "link": "https://www.ticketmaster.ie/alex-warren-finding-family-on-the-dublin-07-05-2026/event/1800632FAC502B56"
+  },
+  {
+    "name": "Tame Impala",
+    "venue": "3Arena",
+    "city": "Dublin",
+    "date": "2026-05-13",
+    "link": "https://www.ticketmaster.ie/tame-impala-dublin-13-05-2026/event/18006338A7CCD595"
+  },
+  {
+    "name": "Hayley Williams",
+    "venue": "National Stadium",
+    "city": "Dublin",
+    "date": "2026-06-29",
+    "link": "https://www.ticketmaster.ie/hayley-williams-dublin-29-06-2026/event/1800636ACC6C15C5"
+  },
+  {
+    "name": "Hayley Williams",
+    "venue": "National Stadium",
+    "city": "Dublin",
+    "date": "2026-06-30",
+    "link": "https://www.ticketmaster.ie/hayley-williams-dublin-30-06-2026/event/1800636ACC6D15CE"
+  },
+  {
+    "name": "Olivia Dean - the Art of Loving Live",
+    "venue": "Marlay Park",
+    "city": "Dublin",
+    "date": "2026-06-20",
+    "link": "https://www.ticketmaster.ie/olivia-dean-the-art-of-loving-dublin-20-06-2026/event/1800646B9385B3C3"
+  },
+  {
+    "name": "Florence + The Machine - The Everybody Scream Tour",
+    "venue": "Marlay Park",
+    "city": "Dublin",
+    "date": "2026-06-28",
+    "link": "https://www.ticketmaster.ie/florence-the-machine-the-everybody-scream-dublin-28-06-2026/event/180063328E8CC35D"
   }
 ]
